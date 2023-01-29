@@ -17,6 +17,7 @@
     --big-font: 5rem;
     --h2-font: 2.3rem;
     --p-font: 1.3rem;
+    --h1-font: 3rem;
 }
 body{
     color: var(--text-color);
@@ -344,14 +345,80 @@ section{
     border-radius: 30px;
 }
 
-@media(max-width:1200px) {
-    header{
-        padding: 12px 3%;
-    }
-    section{
-        padding: 40px 3% 50px;
-    }
+/* About styles */
+
+.about-hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/abthero2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
+.about-text{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: var(--h2-font);
+    color: var(--text-color) ;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.about-banner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* This sets the number of columns to 3 and each column will have the same width */
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.about-content{
+
+}
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(151, 148, 148, 0.7); /* This sets the background color of the container to white with 70% opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    color: black;
+}
+
+
+#left-container {
+    width: 50%;
+    float: left;
+}
+
+#right-container {
+    width: 50%;
+    float: right;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+form {
+    padding: 20px;
+}
+
+
+
+
+
+
 @media (max-width: 920px) {
     #menu-icon{
         display: block;
@@ -404,33 +471,4 @@ section{
   .home{
     height: 85vh;
   }
-}
-
-/* About styles */
-
-.about-hero{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url(./assets/about-hero.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.about-text{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: var(--h2-font);
-    color: var(--main-color);
-    line-height: 1.3;
-    margin-bottom: 25px;
-}
-
-.about-banner{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* This sets the number of columns to 3 and each column will have the same width */
-    gap: 2.5rem;
-    align-items: center;
-    justify-content: center;
 }
